@@ -1,0 +1,1036 @@
+.side {
+margin-top: 25px !important;
+}
+a {
+    color: #166E76;
+}
+.tagline a {
+    color: #166E76;
+}
+.thing .title, .thing .title.loggedin, .thing .title.loggedin.click {
+    color: #000000;
+}
+.thing .title:hover, .thing .title.loggedin:hover {
+    color: #166E76;
+}
+
+.thing .title:visited, .thing .title.loggedin:visited, .thing .title.loggedin.click:visited {
+    color: #909090;
+}
+.link {
+    margin-bottom: 15px;
+}
+
+.arrow.down:hover:before {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    width: 220px;
+    padding: 5px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #333;
+    background-color: #FFF;
+    content: "Please don't use the downvote just because you disagree with someone. Only use it for posts that do not contribute to the discussion.";
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+/*Swaps arrow colors*/
+.arrow.upmod {
+    background-image: url(%%upvote%%);
+    background-position: 0 0;
+}
+.arrow.downmod {
+    background-image: url(%%downvote%%);
+    background-position: 0 0;
+}
+.arrow.down {
+    cursor: wait;
+}
+/*swaps score colors*/
+.link .score {
+    color: #AAAAAA;
+}
+.link .score.dislikes {
+    color: #FF8B60;
+}
+.link .score.likes {
+    color: #9494FF;
+}
+
+/* Body styling */
+body {
+    background: #f3f3f3 url(%%escheresque%%);
+}
+.content {
+    margin-top: 50px;
+}
+
+#siteTable, .stylesheet-customize-container, .search-page > .content, .create-reddit.fancy-settings, .wiki-page-faq > .content, .submit-page > .content {
+    margin-top: 60px;
+}
+
+/*makes header black*/
+#header {
+    border-bottom: 1px solid white;
+    position: relative;
+    background: #000000 url(%%carbon-fibre%%);
+    z-index: 99;
+    margin-bottom: 15px;
+}
+
+/* Header links */
+.dropdown.srdrop .selected {
+    color: silver;
+}
+#sr-header-area {
+    background: #111;
+    margin-bottom: -2px;
+    padding-bottom: 1px;
+    border-bottom-color: #333333;
+    color: silver !important;
+}
+.sr-bar a {
+    color: silver;
+}
+.newpagelink {
+    padding: 3px 5px;
+    background-color: #ff9;
+}
+.user {
+    color: silver;
+}
+#header-img {
+    margin: 0;
+    bottom: -2px;
+    position: relative;
+}
+/* Tabmenu - Piano keys! */
+body.comments-page .tabmenu:not(.formtab) {
+    background: url(%%piano-keys-comments%%) no-repeat !important;
+    width: 170px;
+}
+.tabmenu:not(.formtab) {
+    margin-top: 0px;
+    background: url(%%piano-keys%%) no-repeat;
+    position: absolute;
+    top: 19px;
+    bottom: 60px;
+    display: block;
+    left: 430px;
+    width: 218px;
+    box-shadow: 0px 5px 10px #0A0A0A;
+}
+.tabmenu:not(.formtab) li {
+    margin: 0px;
+    float: left;
+    width: 24px;
+    height: 66px;
+    line-height: 66px;
+}
+.tabmenu:not(.formtab) li:first-child {
+    margin-left: 25px;
+}
+.tabmenu:not(.formtab) li:nth-child(8) {
+    /* Hide RES thingy */
+    display: none;
+}
+.tabmenu:not(.formtab) li a {
+    display: block;
+    float: left;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0;
+    font-weight: bold;
+    border-style:solid;
+    border-width: 1px;
+    border-color: transparent;
+    color: grey;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    text-indent: -9999px;
+}
+.tabmenu:not(.formtab) li:hover:before {
+    position: relative;
+    color: #eee;
+    top: 74px;
+    display: block;
+    z-index: 1000;
+    padding: 5px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #444;
+    background-color: #111;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 10px;
+    height: 10px;
+}
+body:not(.comments-page) .tabmenu:not(.formtab) li:nth-of-type(1):hover:before {
+    content: "Home";
+    width: 40px;
+    left: -13px;
+}
+body:not(.comments-page) .tabmenu:not(.formtab) li:nth-of-type(2):hover:before {
+    content: "New";
+    width: 30px;
+    left: -9px;
+}
+body:not(.comments-page) .tabmenu:not(.formtab) li:nth-of-type(3):hover:before {
+    content: "Rising";
+    width: 42px;
+    left: -14px;
+}
+body:not(.comments-page) .tabmenu:not(.formtab) li:nth-of-type(4):hover:before {
+    content: "Controversial";
+    width: 90px;
+    left: -37px;
+}
+body:not(.comments-page) .tabmenu:not(.formtab) li:nth-of-type(5):hover:before {
+    content: "Top";
+    width: 30px;
+    left: -9px;
+}
+body:not(.comments-page) .tabmenu:not(.formtab) li:nth-of-type(6):hover:before {
+    content: "Saved";
+    width: 40px;
+    left: -13px;
+}
+body:not(.comments-page) .tabmenu:not(.formtab) li:nth-of-type(7):hover:before {
+    content: "Wiki";
+    width: 40px;
+    left: -13px;
+}
+body.comments-page .tabmenu:not(.formtab) li:nth-of-type(1):hover:before {
+    content: "Comments";
+    width: 75px;
+    left: -30px;
+}
+body.comments-page .tabmenu:not(.formtab) li:nth-of-type(2):hover:before {
+    content: "Similar Posts";
+    width: 90px;
+    left: -40px;
+}
+.tabmenu:not(.formtab) li a:hover {
+    color: whitesmoke;
+}
+.tabmenu:not(.formtab) li.selected a {
+    background-color: transparent !important;
+    border-color: transparent;
+    color: orangered !important;
+}
+
+/* Pagename stlying */
+.hover a:hover {
+    text-decoration: none;
+}
+
+#header .pagename {
+    display: block;
+    text-indent: -9999px;
+    color: silver;
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 249px;
+    top: 95px;
+    overflow: hidden;
+}
+
+#header .pagename a {
+    background: url(%%progmetal-link-img%%) no-repeat;
+    display: block;
+    width: 160px;
+    height: 50px;
+    opacity: 0.85;
+}
+
+#header .pagename a:hover {
+    opacity: 1.0;
+}
+
+#header .pagename a:active {
+    opacity: 0.85;
+}
+
+/* Header accouncements/links (see sidebar, numbered list at the top) */
+/* ordered list styling */
+.side .md > ul {
+    list-style: square outside;
+}
+.side .md ol {
+    white-space: nowrap;
+}
+.side .md ol:first-of-type {
+    list-style: none;
+    position: absolute;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px
+}
+/* position first (announcement) list */
+.side .md > ol:first-of-type {
+    position: absolute;
+    top: 19px;
+    left: 660px;
+    color: silver;
+}
+/* Discussion thread banner */
+.side .md > ol:nth-of-type(2) {
+    position: absolute;
+    top: 146px;
+    left: -10px;
+}
+.side .md > ol:nth-of-type(3) {
+    position: absolute;
+    top: 188px;
+    left: -10px;
+}
+.side .md ol:first-of-type li, .side .md ol:nth-of-type(2) li, .side .md ol:nth-of-type(3) li {
+    display: inline-block !important;
+    margin-right: 5px;
+    position: relative;
+    top: 0px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #D0D0D0;
+    font-weight: bold;
+    text-shadow: black 0px 0px 10px;
+    background: #111;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+.side .md ol:nth-of-type(2) li, .side .md ol:nth-of-type(3) li {
+    background: #000000 url(%%wood%%);
+    position: relative;
+    margin-right: 10px;
+    border: 1px solid #333;
+    box-shadow: 0px 2px 10px 0px #888;
+    padding: 5px 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.side .md ol:nth-of-type(2) li:first-child, .side .md ol:nth-of-type(3) li:first-child {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #333;
+    padding: 5px 0;
+    text-shadow: none;
+    margin-right: 5px;
+    width: 105px;
+    text-align: right;
+}
+.side .md ol:first-of-type li a, .side .md ol:nth-of-type(2) li a, .side .md ol:nth-of-type(3) li a {
+    color: #1EBDCC;
+}
+.side .md ol:nth-of-type(2) li a {
+    border-right: 1px solid #000;
+    border-left: 1px solid #3A3A3A;
+}
+.side .md ol:nth-of-type(2) li a:first-child {
+    border-left: 0px;
+}
+.side .md ol:nth-of-type(2) li a:last-child {
+    border-right: 0px;
+}
+.side .md ol:first-of-type li a:hover, .side .md ol:nth-of-type(2) li a:hover, .side .md ol:nth-of-type(3) li a:hover {
+    color: #f0f0f0;
+}
+.side .md ol:first-of-type li a:active, .side .md ol:nth-of-type(2) li a:active, .side .md ol:nth-of-type(3) li a:active {
+    color: silver;
+}
+
+.styleToggle {
+    padding-bottom: 5px;
+}
+
+body:not(.search-page) form#search {
+    float: right;
+}
+body.search-page .searchpane {
+    margin-right: 352px;    
+}
+#search input[type="text"] {
+    border-style:solid;
+    border-width: 1px;
+    border-color: #CCC;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 310px;
+    color: #ABABAB;
+}
+#searchexpando {
+    margin-top: 10px;
+}
+.infobar {
+    /*background-color: whitesmoke;
+    border-color: #CCC;
+    border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;*/
+    display: none !important;
+}
+.side {
+    background-color: transparent;
+    width: 332px;
+    margin: 0 10px 0 15px;
+}
+.titlebox, .sidecontentbox, .linkinfo {
+    float: right;
+    width: 300px;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    margin: 10px 0 0 0;
+}
+.titlebox {
+    padding: 0px 15px 15px 15px;
+}
+.sidecontentbox {
+    padding: 15px 15px 6px 15px;
+}
+.sidecontentbox .content {
+    border: 0px;
+    padding: 10px;
+}
+.titlebox .usertext .md {
+    overflow: visible;
+}
+.titlebox h1 a {
+    color: whitesmoke;
+}
+.titlebox h1 {
+    font-family: 'Lucida Bright';
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: #166E76;
+    color: whiteSmoke;
+    padding: 6px 0 5px 20px;
+    margin: 20px -21px 10px -22px;
+    border-bottom: 1px solid #0A4146;
+    z-index: 100;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: 0px 1px 3px #555;
+}
+.titlebox h1::before {
+    display: block;
+    content: "";
+    border-color: transparent #0A474D transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    z-index: -1;
+    margin-left: -35px;
+    margin-top: 10px;
+}
+.titlebox h1::after {
+    display: block;
+    content: "";
+    border-color: transparent transparent transparent #0A474D;
+    border-style: solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -9px;
+    margin-left: 308px;
+}
+.titlebox .bottom {
+    padding-top: 10px;
+}
+.titlebox form.usertext {
+    padding-bottom: 10px;
+}
+
+/* Link info */
+.linkinfo {
+    width: 320px;
+    border-radius: 0px;
+}
+
+/* Sidebox link prettification */
+.sidebox.submit .morelink {
+    float: right;
+    width: 330px;
+    background-image: none;
+    background-color: #CBDFE0;
+    border-color: #BBB;
+    margin-top: 10px;
+}
+.sidebox.submit .morelink a {
+    color: #166E76;
+}
+.sidecontentbox a.helplink {
+    margin-top: 2px;
+}
+.sidebox.submit .morelink a:hover {
+    color: #198791;
+}
+.account-activity-box {
+    float: right;
+}
+.nub {
+    display: none;
+}
+.icon-menu a {
+    background: transparent;
+}
+.titlebox form.toggle, .leavemoderator {
+    background: transparent;
+}
+.md {
+    overflow: hidden;
+}
+.md table {
+    margin: 0;
+}
+/* sidebar font size change*/
+.titlebox .md {
+    font-size: 80%;
+}
+/* Remove ads */
+#ad-frame {
+    display: none;
+}
+/* Hide "submit a link" text */
+.sidebox .spacer {
+    display: none;
+}
+/* hide "Create a subreddit" button */
+.sidebox.create {
+    display: none;
+}
+/*replace "readers" with something else*/
+div.titlebox span.word {
+    display: none;
+}
+div.titlebox span.number:after {
+    content: " connoisseurs of fine metal";
+}
+/*Changing 'MODERATORS in sidebar*/
+.sidecontentbox h1:not(:first-child) {
+    font-size: 0pt !important;
+}
+.sidecontentbox h1:not(:first-child):after {
+    font-size: 10pt !important;
+    content: "THE CHOSEN ONES";
+}
+/*Makes brick gay*/
+.id-t2_31xbl > .entry {
+    color: #FFFFFF;
+}
+.id-t1_c10u1gk > .entry {
+    color: #FA8072;
+    font-weight: bolder;
+}
+.id-t1_c10yfbk > .entry {
+    color: #FF00FF;
+    font-weight: bolder;
+}
+/*flair*/
+.flair {
+    /*default*/
+    display: inline-block;
+    margin-right: .5em;
+    padding: 0 2px;
+    background: #f5f5f5;
+    color: #555;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #DDD;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.flair-green {
+    padding: 0;
+    background: none;
+    color: green;
+    border-width: 0;
+    background-color: white;
+    border-radius: 0;
+}
+.flair-red {
+    padding: 0;
+    background: none;
+    color: red;
+    border-width: 0;
+    background-color: black;
+    border-radius: 0;
+}
+/* Special coloring for mods*/
+div.content .author.id-t2_61zzv, div.content .author.id-t2_4704x, div.content .author.id-t2_4ehvl, div.content .author.id-t2_31xbl, div.content .author.id-t2_41sm0, div.content .author.id-t2_4f0o7 {
+    color: white !important;
+    font-weight: bold;
+    padding: 0 2px 0 2px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #282 !important
+}
+div.content .author.id-t2_61zzv:hover, div.content .author.id-t2_4704x:hover, div.content .author.id-t2_4ehvl:hover, div.content .author.id-t2_31xbl:hover, div.content .author.id-t2_41sm0:hover, div.content .author.id-t2_4f0o7:hover {
+    background-color: #134913 !important;
+    text-decoration: none !important
+}
+/* Emphasize comment and upvote links */
+.first .comments {
+    color: #444 !important;
+}
+.likes .score.likes {
+    color: #166E76;
+}
+/* Updates for Link/URL post tags */
+ul.tabmenu.formtab:before {
+    font-size: 14px;
+    font-weight: bold;
+    content: "Please use the search function to avoid reposts. "
+}
+.submit-page #url-field .roundfield-content div:last-child:before {
+    font-size: 14px;
+    font-weight: bold;
+    content: "No images please. Refer to Rule #4. ";
+}
+.tabmenu.formtab .selected a {
+    background-color: #CBDFE0;
+    color: black;
+}
+.tabmenu.formtab a {
+    padding: 2px 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tabmenu.formtab li a {
+    background-color: #eee;
+}
+.formtabs-content {
+    border-top: 0px;
+}
+
+/* Misc. */
+.midcol {
+    margin-right: 8px;
+    margin-left: 12px;
+}
+.thumbnail {
+    margin-right: 10px;
+}
+.thing.linkflair .thumbnail.nsfw {
+    background-position: 3px -359px;
+}
+.roundfield {
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+.keyHighlight {
+    background-color: transparent !important;
+    outline: 0px !important;
+}
+.link .usertext .md {
+    border-color: #166E76;
+}
+.link.last-clicked {
+    border-width: 0px;
+}
+
+/* Adjustment on this very page */
+.sheets {
+    margin-right: 365px;
+}
+
+/* RES night mode fixes */
+body.res-nightmode #header {
+    border-bottom-color: #333;
+}
+body.res-nightmode #sr-header-area, body.res-nightmode #sr-more-link {
+    background-color: #111 !important; 
+}
+body.res-nightmode #header-bottom-right {
+    background-color: #111 !important;
+}
+body.res-nightmode #header-bottom-right a {
+    color: #1EBDCC !important;
+}
+body.res-nightmode #userbarToggle {
+    background-color: transparent !important;
+    border-right-color: transparent !important;
+    color: #1EBDCC !important;
+}
+body.res-nightmode .icon-menu a, body.res-nightmode form.leavemoderator-button {
+    background: transparent !important;
+}
+
+body.res-nightmode .entry p.tagline:first-of-type, body.res-nightmode .entry time {
+    color: #eee !important;
+}
+body.res-nightmode .md td, body.res-nightmode .md th {
+    border-color: #333 !important;
+}
+body.res-nightmode .entry .buttons li a {
+    color: #1EBDCC !important;
+}
+body.res-nightmode .thing {
+    border: 0px !important;
+}
+body.res-nightmode .thing .title.loggedin, body.res-nightmode .link .title {
+    color: #1EBDCC !important;
+}
+body.res-nightmode .thing .title.loggedin:visited, body.res-nightmode .link .title:visited {
+    color: #999 !important;
+}
+body.res-nightmode .first .comments,
+body.res-nightmode #subscribe a, 
+body.res-nightmode .share .option, 
+body.res-nightmode h2, 
+body.res-nightmode .tagline a, 
+body.res-nightmode .content a, 
+body.res-nightmode .footer a, 
+body.res-nightmode .wired a, 
+body.res-nightmode .side a, 
+body.res-nightmode .subredditbox li a {
+    color: #1EBDCC !important;
+}
+body.res-nightmode .tabmenu.formtab li a {
+    background-color: transparent !important;
+    border-color: black !important;
+}
+body.res-nightmode form#newlink.submit ul.tabmenu > li.selected a {
+    color: #1EBDCC !important;
+    background-color: #444 !important;
+    border: 1px solid #000 !important;
+}
+body.res-nightmode form#newlink.submit textarea, 
+body.res-nightmode form#newlink.submit input#url, 
+body.res-nightmode form#newlink.submit input#sr-autocomplete {
+    background-color: #222 !important;
+}
+body.res-nightmode .formtabs-content .infobar {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+body.res-nightmode .keyHighlight {
+    background-color: transparent !important;
+}
+body.res-nightmode form#newlink.submit button.btn {
+    color: #1EBDCC !important;
+    text-transform: capitalize;
+}
+body.res-nightmode .titlebox, body.res-nightmode .sidecontentbox, body.res-nightmode .linkinfo {
+    background-color: transparent !important;
+    border-color: #555 !important;
+}
+body.res-nightmode .footer {
+    background-color: transparent !important;
+}
+body.res-nightmode .titlebox blockquote, body.res-nightmode .sidecontentbox .content {
+    background-color: transparent !important;
+}
+body.res-nightmode .sidebox.submit .morelink {
+    background: #555 !important;
+}
+body.res-nightmode .login-form-side {
+    background-color: transparent !important;
+    border-color: #555555 !important;
+}
+body.res-nightmode .login-form-side label {
+    color: silver !important;
+}
+body.res-nightmode .login-form-side input {
+    width: auto !important;
+}
+
+/* Random RES fixes */
+#RESShortcutsEditContainer {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+#RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsSort {
+    background-color: transparent !important;
+    color: #1EBDCC !important;
+}
+
+#header-bottom-right {
+    background-color: #111 !important;
+    border-left: 1px solid #333 !important;
+}
+body.res #header-bottom-right {
+    top: 114px !important;
+    border-top: 1px solid #333 !important;
+    border-top-left-radius: 5px !important;
+    -moz-border-top-left-radius: 5px !important;
+    -webkit-border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 0px !important;
+    -moz-border-bottom-left-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+}
+body:not(.res) #header-bottom-right {
+    border-top: 1px solid #333 !important;
+    border-top-left-radius: 5px !important;
+    -moz-border-top-left-radius: 5px !important;
+    -webkit-border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 0px !important;
+    -moz-border-bottom-left-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+}
+#header-bottom-right a {
+    color: #1EBDCC !important;
+}
+body.res #header-bottom-right .user {
+    margin-left: 20px !important;
+}
+body:not(.res) #header-bottom-right .user {
+    margin-left: 5px !important;
+}
+#userbarToggle {
+    background-color: transparent !important;
+    border-right-color: transparent !important;
+    color: #1EBDCC !important;
+    top: 2px !important;
+    padding-left: 7px;
+}
+.NERPageMarker {
+    background: transparent !important;
+    border: 0px !important;
+    color: #555 !important;
+}
+
+#progressIndicator {
+    outline: 0px !important;
+    border: 0px !important;
+}
+.login-form-side {
+    border: 1px solid #CCCCCC;
+    float: right;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    width: 330px;
+}
+.footer {
+    background-color: whiteSmoke;
+    border: 1px solid #CCC;
+}
+
+/* Disable down arrow on comments page */
+.comments-page .down.arrow {
+    display: none;
+}
+
+.comments-page .link .down.arrow {
+    display: block !important;
+}
+
+/* Thread title colors */
+
+a[href*="hall_of_fame"].title:link {
+    color: #FF0000 !important
+    }
+a[href*="hall_of_fame"].title:visited {
+    color: #CC0000 !important
+    }
+
+
+a[href*="announcement"].title:link {
+    color: green !important
+    }
+a[href*="announcement"].title:visited {
+    color: green !important
+    }
+
+/* FLAIR SHTUFF (No, we didn't blatantly copy from r/IamA) */
+
+a.thumbnail img {
+    vertical-align:middle;
+}
+
+.linkflairlabel {
+    display:none;
+}
+
+div.linkflair-clean a.thumbnail {
+	border-right:8px solid #198791;
+	padding-right:8px;
+}
+
+div.linkflair-clean  a.thumbnail:hover::before {
+	display:block;
+	padding:2px;
+	content:"Clean Vocals";
+	background-color:#198791;
+	color:white;
+	width:86px;
+	font-size:12px;
+	border-bottom-right-radius:8px ;
+	border-top-right-radius:8px ;
+	position:absolute;
+	z-index:100;
+        margin-left:85px;
+}
+
+li div.linkflair-clean a.title:before {
+	content:"Clean | ";
+}
+
+div.linkflair-harsh a.thumbnail {
+	border-right:8px solid #ff4500;
+	padding-right:8px;
+}
+
+div.linkflair-harsh a.thumbnail:hover::before {
+	display:block;
+	padding:2px;
+	content:"Harsh Vocals";
+	background-color:#ff4500;
+	color:black;
+        font-weight:bold;
+	width:92px;
+	font-size:12px;
+	border-bottom-right-radius:8px ;
+	border-top-right-radius:8px ;
+	position:absolute;
+	z-index:100;
+        margin-left:85px;
+}
+
+li div.linkflair-harsh a.title:before {
+	content:"Harsh | ";
+}
+
+li div.linkflair-official a.title:before {
+	content:"Official | ";
+}
+
+div.linkflair-instrumental a.thumbnail {
+	border-right:8px solid #AAA;
+	padding-right:8px;
+}
+
+div.linkflair-instrumental a.thumbnail:hover::before {
+	display:block;
+	padding:2px;
+	content:"Instrumental";
+	background-color:#AAA;
+	color:black;
+        font-weight:bold;
+	width:94px;
+	font-size:12px;
+	border-bottom-right-radius:8px ;
+	border-top-right-radius:8px ;
+	position:absolute;
+	z-index:100;
+        margin-left:85px;
+}
+
+li div.linkflair-instrumental a.title:before {
+	content:"Instrumental | ";
+}
+
+
+div.linkflair-mixed a.thumbnail {
+	border-right:8px solid #794279;
+	padding-right:8px;
+}
+
+div.linkflair-mixed a.thumbnail:hover::before {
+	display:block;
+	padding:2px;
+	content:"Mixed Vocals";
+	background-color:#794279;
+	color:#FFF;
+	width:86px;
+	font-size:12px;
+	border-bottom-right-radius:8px ;
+	border-top-right-radius:8px ;
+	position:absolute;
+	z-index:100;
+        margin-left:85px;
+}
+
+li div.linkflair-mixed a.title:before {
+	content:"Mixed | ";
+}
+
+#noresults {
+text-align: center;
+padding-top: 20px;
+font-size: 30px;
+color: #C0C0C0;
+text-shadow: 1px 1px 0 white;
+}
+
+#noresults:after{
+    content: ".";
+}
+
+/* thedicktater
+.md h1:first-of-type {
+background-color: #bb0202;
+border-bottom: #860303;
+font-style: italic;
+}
+.md h1:first-of-type:before {
+    border-color: transparent #860303 transparent transparent;
+}
+
+.md h1:first-of-type:after{
+border-color: transparent transparent transparent #860303;
+} */
+
+.wiki-page .wiki-page-content {
+margin-right: 385px;
+}
+
+/* modtools goodies
+
+<removereasons2>
+
+<header>Removed:</header>    
+
+ <footer> </footer>
+
+<logsub></logsub>    
+<logtitle></logtitle>    
+<bantitle></bantitle>    
+<logreason></logreason>
+
+<reason> /> If your song has already been submitted within the last 6 months it isn't allowed. Please use the search function.      
+</reason>
+
+<reason> /> Don't link to illegal content. Streaming audio is fine as long as there are no downloads.
+</reason>
+
+<reason> /> Don't post memes. Take them to r/metalmemes instead.
+
+<reason> /> Don't submit images. You may, however, include images in self-posts.   
+</reason>
+
+<reason> />Don't post full albums as submissions, one song is enough! (Exceptions for promotional streams of new releases.)
+</reason>
+
+<reason> />Titles must include **Band Name - Song Title.**
+</reason>
+
+<reason><textarea id="customReason" placeholder="Enter Custom reason" />
+</reason>
+
+</removereasons2>
+
+*/
